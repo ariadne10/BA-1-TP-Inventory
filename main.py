@@ -52,7 +52,7 @@ x = x.astype(str)
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
 chart_data = pd.DataFrame(
-    Month,
+    np.random.randn(20, 3),
     columns= [group_labels])
     
 st.area_chart(chart_data)
