@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pylab as plt
 
 df = pd.read_excel (r'C:\Users\rmeli\Desktop\BA-1 TP Inventory 01 Apr 2022 Area Chart.xlsx', sheet_name='Data')
 
@@ -45,9 +44,4 @@ pop = EOM_inventory.pop(0)
 
 data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
-x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
-
-plt.rcParams["figure.figsize"] = (25,10)
-
-x.plot(x='Month')
 
