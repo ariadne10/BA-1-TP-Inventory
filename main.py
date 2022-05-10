@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-import matplotlib.pyplot as plt
 
 tp_loading = 0.225
 yield_per_ferm_run = 1465
@@ -46,7 +45,5 @@ data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
-plt.rcParams["figure.figsize"] = (25,10)
-
-x.plot(x='Month')
+st.line_chart(x)
 
