@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import streamlit as st
 
 tp_loading = 0.225
 yield_per_ferm_run = 1465
