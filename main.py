@@ -46,7 +46,7 @@ data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
-x.astype(str)
+x = x.astype(str)
 
 st.line_chart(x)
 
