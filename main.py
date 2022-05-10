@@ -11,7 +11,7 @@ yield_per_ferm_run = 1465
 EOM = 6850
 FY22_ferm_run_plan = [0,3,6,0,0,0,0,6,0,0,0,0,0]
 
-Month = ['March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'Feburary', 'March', 'April']
+Month = [['March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'Feburary', 'March', 'April']]
 
 demand = []
 
