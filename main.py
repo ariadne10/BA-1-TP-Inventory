@@ -11,9 +11,9 @@ Month = ['March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octobe
 
 demand = []
 
-input_string = st.text_input()
+input_string = st.text_input('Enter KG demand for blend A585002 from March 22 - March 23: ', value = '')
 
-demand_A585002 = st.text_input('Movie title', 'Life of Brian')
+demand_A585002 = input_string
 
 
 for i in range(len(demand_A585002)):
