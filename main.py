@@ -1,11 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-import pip
-pip.main(["install", " plotly"])
-pip.main(["install", " scipy"])
-import plotly.figure_factory as ff
-import scipy
+
 
 tp_loading = 0.225
 yield_per_ferm_run = 1465
@@ -53,7 +49,7 @@ x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inv
 
 x = x.astype(str)
 
-fig = ff.create_distplot(
-         Month, group_labels, bin_size=[5000, 10000, 15000])
+x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
-st.plotly_chart(fig, use_container_width=True)
+st.area_chart(chart_data)
+
