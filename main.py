@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 import pip
 pip.main(["install", " plotly"])
+pip.main(["install", " scipy"])
 import plotly.figure_factory as ff
 
 
