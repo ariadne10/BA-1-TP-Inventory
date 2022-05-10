@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
+import matplotlib.pylab as plt
 
 
 tp_loading = 0.225
@@ -41,17 +42,16 @@ for x,y,z in zip(production, demand, EOM_inventory):
 
 pop = EOM_inventory.pop(0)
 
-group_labels = ['production', 'demand', 'EOM_inventory']
-
 data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
-x = x.astype(str)
+plt.rcParams["figure.figsize"] = (25,10)
 
-x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
+x.plot(x='Month')
 
-chart_data = x
-    
-st.area_chart(chart_data)
+
+#x = x.astype(str)
+
+
 
