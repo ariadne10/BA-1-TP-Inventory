@@ -52,7 +52,7 @@ x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inv
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
 chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
+    500,
     columns= [group_labels])
     
 st.area_chart(chart_data)
