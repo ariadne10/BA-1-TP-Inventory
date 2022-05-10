@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-[global]
-dataFrameSerialization = "legacy"
 
 tp_loading = 0.225
 yield_per_ferm_run = 1465
@@ -47,6 +45,8 @@ pop = EOM_inventory.pop(0)
 data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
+
+x.astype(str)
 
 st.line_chart(x)
 
