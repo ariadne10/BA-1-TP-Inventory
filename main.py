@@ -5,7 +5,7 @@ import pip
 pip.main(["install", " plotly"])
 pip.main(["install", " scipy"])
 import plotly.figure_factory as ff
-
+import scipy.figure_factory as ff
 
 tp_loading = 0.225
 yield_per_ferm_run = 1465
