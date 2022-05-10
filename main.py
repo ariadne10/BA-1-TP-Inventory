@@ -18,7 +18,7 @@ demand_A585002 = input_string
 
 for i in range(len(demand_A585002)):
     # convert each item to int type
-    demand_A585002[i] = int(demand_A585002[i])
+    demand_A585002[i] = float(demand_A585002[i])
     
 
 for i in demand_A585002:
