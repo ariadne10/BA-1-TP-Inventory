@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
+import plotly.figure_factory as ff
 
 
 tp_loading = 0.225
@@ -52,3 +53,4 @@ x = x.astype(str)
 fig = ff.create_distplot(
          Month, group_labels, bin_size=[5000, 10000, 15000])
 
+st.plotly_chart(fig, use_container_width=True)
