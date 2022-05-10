@@ -41,6 +41,7 @@ for x,y,z in zip(production, demand, EOM_inventory):
 
 pop = EOM_inventory.pop(0)
 
+group_labels = ['production', 'demand', 'EOM_inventory']
 
 data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
@@ -48,5 +49,6 @@ x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inv
 
 x = x.astype(str)
 
-st.line_chart(x)
+fig = ff.create_distplot(
+         Month, group_labels, bin_size=[5000, 10000, 15000])
 
