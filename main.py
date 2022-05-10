@@ -49,10 +49,9 @@ x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inv
 
 plt.rcParams["figure.figsize"] = (25,10)
 
-print(x.plot(x='Month'))
+x.plot(x='Month')
 
 
-#x = x.astype(str)
 
 
 
