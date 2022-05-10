@@ -53,6 +53,7 @@ x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inv
 
 chart_data = pd.DataFrame(
     Month,
-    columns= [group_labels]
+    columns= [group_labels])
+    
 st.area_chart(chart_data)
 
