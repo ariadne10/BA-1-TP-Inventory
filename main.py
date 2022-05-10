@@ -1,8 +1,6 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_excel (r'C:\Users\rmeli\Desktop\BA-1 TP Inventory 01 Apr 2022 Area Chart.xlsx', sheet_name='Data')
-
 tp_loading = 0.225
 yield_per_ferm_run = 1465
 EOM = 6850
