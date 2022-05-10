@@ -11,7 +11,7 @@ Month = ['March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octobe
 
 demand = []
 
-input_string = input('Enter KG demand for blend A585002 from March 22 - March 23: ')
+input_string = st.text_input()
 
 demand_A585002 = input_string.split()
 
