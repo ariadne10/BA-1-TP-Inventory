@@ -13,12 +13,12 @@ demand = []
 
 input_string = st.text_input('Enter KG demand for blend A585002 from March 22 - March 23: ', key = int)
 
-demand_A585002 = input_string
+demand_A585002 = input_string.split()
 
 
 for i in range(len(demand_A585002)):
     # convert each item to int type
-    demand_A585002[i] = float(demand_A585002[i])
+    demand_A585002[i] = int(float(demand_A585002[i]))
     
 
 for i in demand_A585002:
