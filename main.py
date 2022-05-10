@@ -47,13 +47,11 @@ data_tuples = list(zip(Month, production, demand, EOM_inventory))
 
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
-x = x.astype(str)
+# x = x.astype(str)
 
 x = pd.DataFrame(data_tuples, columns=['Month', 'production', 'demand', 'EOM_inventory'])
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns= [production, demand, EOM_inventory])
+chart_data = x
     
 st.area_chart(chart_data)
 
